@@ -11,7 +11,7 @@ import static org.openqa.selenium.By.linkText;
 public class SelenideTest {
 
     @Test
-    public void testRepositoryIssue() {
+    public void testRepositoryIssues() {
 
         open("https://github.com");
 

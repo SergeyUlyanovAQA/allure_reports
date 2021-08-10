@@ -14,7 +14,7 @@ public class LambdaStepTest {
     private static final String REPOSITORY = "SergeyUlyanovAQA/allure_reports";
 
     @Test
-    public void testRepositoryIssue() {
+    public void testRepositoryIssues() {
 
         step("Открываем главную страницу", () -> {
             open("https://github.com");
@@ -30,7 +30,7 @@ public class LambdaStepTest {
             $(linkText("SergeyUlyanovAQA/allure_reports")).click();
         });
 
-        step("Проверяем на странице наличие Issue", () -> {
+        step("Проверяем на странице наличие Issues", () -> {
             $(byText("Issues")).should(Condition.exist);
         });
 
